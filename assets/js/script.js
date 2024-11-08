@@ -93,32 +93,52 @@ addLicensePlate();
 console.log("----- Esercizio 6 -----");
 
 function addObject() {
-     let newCar = {
+    let newCar = {
         brand: 'Fiat',
         model: 'Punto',
         color: 'green',
         trims: ['eco', 'sport'],
         licensePlate: `ABCSSS`
-     }
-     cars.push(newCar);
-     console.log(cars);
+    }
+    cars.push(newCar);
+    console.log(cars);
 }
 
 addObject();
 
 console.log("----- Esercizio 7 -----");
 
+/*Esercizio 7 */
+
 function removeTrim() {
     for (let i = 0; i < cars.length; i++) {
-          cars[i].pop(cars[i].trims[i]);
+        if (Array.isArray(cars[i].trims) && cars[i].trims.length > 0) {
+            cars[i].trims.pop();
+        }
     }
     console.log(cars);
 }
 
-//removeTrim();
+removeTrim();
 
 console.log("----- Esercizio 8 -----");
 
+const numericArray = [
+    6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
+]
+
+function findMax(numberFinal) {
+    for (let i = 0; i < cars.length; i++) {
+        if (numericArray[i] === numberFinal) {
+            return;
+        }
+        else {
+            console.log(numericArray[i]);
+        }
+    }
+}
+
+findMax(32);
 
 
 
