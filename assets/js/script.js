@@ -79,6 +79,10 @@ const cars = [
     },
 ];
 
+/*Esercizio 6 */
+
+console.log("----- Esercizio 6 -----");
+
 function addLicensePlate() {
     for (let i = 0; i < cars.length; i++) {
         cars[i].licensePlate = `ABC123${i}`;
@@ -88,9 +92,9 @@ function addLicensePlate() {
 
 addLicensePlate();
 
-/*Esercizio 6 */
+/*Esercizio 7 */
 
-console.log("----- Esercizio 6 -----");
+console.log("----- Esercizio 7 -----");
 
 function addObject() {
     let newCar = {
@@ -106,9 +110,10 @@ function addObject() {
 
 addObject();
 
-console.log("----- Esercizio 7 -----");
+/*Esercizio 8 */
 
-/*Esercizio 7 */
+console.log("----- Esercizio 8 -----");
+
 
 function removeTrim() {
     for (let i = 0; i < cars.length; i++) {
@@ -139,9 +144,6 @@ function findMax(numberFinal) {
 }
 
 findMax(32);
-
-
-
 
 
 
