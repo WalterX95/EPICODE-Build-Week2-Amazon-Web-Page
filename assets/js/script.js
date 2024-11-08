@@ -147,6 +147,19 @@ findMax(32);
 
 
 
+console.log("----- Esercizio 10 -----");
+
+function ItalianAlphabet() {
+    let a = 'a';
+    let z = 'z';
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
+    console.log(alphabet);
+}
+
+ItalianAlphabet();
+
+
+
 
 
 
